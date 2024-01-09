@@ -1,0 +1,27 @@
+.loading{
+    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+.loader {
+    width: 40px;
+    aspect-ratio: .577;
+    clip-path: polygon(0 0,100% 100%,0 100%,100% 0);
+    position: relative;
+    animation: l19 2s infinite linear; 
+    overflow: hidden;
+    &:before{
+        content: "";
+        position: absolute;
+        inset: -150% -150%;
+        background: repeating-conic-gradient(from 30deg,#FFABAB 0 60deg,#ABE4FF 0 120deg,#FF7373 0 180deg);
+        animation: inherit;
+        animation-direction: reverse; 
+      }
+  }
+}
+  
+  @keyframes l19 {
+    100% {transform: rotate(360deg)}
+  }

@@ -1,0 +1,61 @@
+.mean-word{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+.meanings{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    h4{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--meaning-color);
+    }
+    ul{
+        list-style: none;
+        margin-left: 25px;
+        li{
+            
+            padding-bottom: 10px;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; 
+            color: var(--text--color);
+            &::before{
+                content: "\2022";
+                color: #8F19E8;
+                font-weight: bold;
+                display: inline-block; 
+                width: 16px;
+                margin-left: -16px;
+            }
+            text-decoration-color: #8F19E8;
+            .example{
+                color: red;
+            }
+        }
+    }
+    h5{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--meaning-color);
+        span{
+            padding-left: 8px;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color:var(--list--color);
+            cursor: pointer;
+        &:hover{
+            text-decoration-line: underline;
+        }
+        }
+    }
+}
+}

@@ -1,0 +1,30 @@
+.main-word{
+    .word{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            text-transform: capitalize;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: var(--text--color);
+        }
+        .play-music{
+            cursor: pointer;
+        }
+    }
+    .pronounciation{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #A445ED;
+    }
+}
+@media  screen and (max-width:500px) {
+    .main-word .word h2{
+        font-size: 40px;
+    }
+}
